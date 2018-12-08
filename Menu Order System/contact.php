@@ -15,6 +15,70 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!--<script type="text/javascript">
+	function validateForm() {
+    var fullname= document.conForm.fullname;
+	if (fullname.value == "") {
+	alert("Please input your firstname");
+	fullname.focus();
+    return false;
+    }
+    if (!isNaN(fullname.value)) {
+	alert("Please input only alphabet");
+	fullname.focus();
+    return false;
+    }
+	var email = document.conForm.email;
+	if (email.value == "") {
+	alert("Please input your email address");
+	email.focus();
+	return false;
+	}
+	if (email.value.indexOf("/") > -1)
+        {
+        alert("/ cannot be in field");
+        email.focus() ;          
+            return false;
+     } 
+     if (email.value.indexOf(".") < 0)
+        {
+           alert(". is missing in field");
+           email.focus();
+    return false;
+    }
+    if (email.value.indexOf("@") < 0)
+        {
+            alert("@ is missing in field");
+           email.focus();
+            return false;
+        }   
+
+	var phone = document.conForm.phone;
+	if (phone.value == "" || isNaN(phone.value)) {
+	alert("Phone number should be numeric.");
+	phone.focus();
+	return false;
+	}
+	if (phone.value.length != 11) {
+	alert( "Phone number should be exactly 11 digits.");
+	phone.focus();
+	return false;
+	}
+	var subject = document.conForm.subject;
+	if ( subject.value == "") {
+  alert("Please enter a subject");
+subject.focus();
+	return false;
+    }
+    var comment = document.conForm.comment;
+	if (comment.value == "") {
+	alert("Please enter a message");
+	comment.focus();
+    return false;
+    }
+	return true;
+	}
+	</script>-->
   </head>
   <body>
     
@@ -52,25 +116,25 @@
                         <div class="col-12" id="contact">
                             <h3 class="text-center align-middle">Send Us a Message</h3>
 
-                                <form method="post" action="contacte.php">
+                                <form method="post" action="contacte.php" name="conForm" onsubmit="validateForm()">
                                         <div class="form-row">
                                           <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname">
+                                            <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" required pattern="[a-z]+">
                                           </div>
                                           <div class="form-group col-md-6">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                                           </div>
                                         </div>
                                         <div class="form-row">
                                         <div class="form-group col-md-6">
-                                          <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
+                                          <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" required pattern="[0-9]+">
                                         </div>
                                         <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required pattern="[a-z]+">
                                         </div>
                                         </div>
                                         <div class="form-group">
-                                                <textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Enter your Message....."></textarea>
+                                                <textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Enter your Message....." required pattern="[a-z]+"></textarea>
                                               </div>
                                         <input type="submit" class="btn float-right" name="submit">
                                       </form>

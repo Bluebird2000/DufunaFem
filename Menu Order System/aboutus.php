@@ -42,8 +42,8 @@
               </nav>
               <div class="jumbotron jumbotron-fluid" id="about-jumbotron">
                     <div class="container">
-                           <h2 class="text-center text-white" id="content">Contact Us</h2>
-     <p class="text-center text-white">Drop us a line, or give us a heads up if you’re interested in visiting us.</p>      
+                           <h2 class="text-center " id="content">About Us</h2>
+     <p class="text-center ">Our mission, vision and goals.</p>      
                     </div>
                   </div>
 <div class="container-fluid"id="about">
@@ -85,7 +85,7 @@
 <section id="founding">
         <h2>Our founding</h2>
 
-        <p>Moz was founded by Rand Fishkin and Gillian Muessig in 2004. It was called SEOmoz, and started as a blog and an online community where some of the world's first SEO experts shared their research and ideas. We launched the Beginner's Guide to SEO and our first Search Ranking Factors study, and that hub of industry expertise transformed into a small consulting firm and led us to create some of our first SEO tools.</p>
+        <p>Mo restaurant was founded by Chef Mo  in 2004. It was called SEOmoz, and started as a blog and an online community where some of the world's first SEO experts shared their research and ideas. We launched the Beginner's Guide to SEO and our first Search Ranking Factors study, and that hub of industry expertise transformed into a small consulting firm and led us to create some of our first SEO tools.</p>
 </section>
       <div class="container-fluid" id="team">
         <h2 class="text-center">Our Team</h2>

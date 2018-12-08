@@ -8,9 +8,6 @@ $phone = $_POST['phone'];
 $subject = $_POST['subject'];
 $comment = $_POST['comment'];
 
-
-
-
 //create query*/
  $query="insert into contacte (fullname, email, phone, subject, message) values ('$fullname','$email','$phone','$subject','$comment')";
 
@@ -19,7 +16,8 @@ $comment = $_POST['comment'];
  mysqli_query($connect,$query) or die('error executing query');
 //close connection*/
  mysqli_close($connect) or die('closing connection');
-echo "Your comment has been taken, we would get back to you:)";
+echo "Your comment has been taken, we would get back to you:)". "<br/>";
+echo "<a href='contact.php'>Click here to go back</a>";
 }
 
 

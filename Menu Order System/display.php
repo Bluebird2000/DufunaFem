@@ -35,23 +35,22 @@
 background-color:#ff802a;
 }
 table{
-border: 1px solid black;
-background-color: #ff802a;
+/*border: 1px solid black;
+background-color: #ff802a;*/
 margin-left:auto; 
 margin-right:auto;
-color:#ffffff;
+color: #ff802a;
 font-family: arial, sans-serif;
 border-collapse: collapse;
 }
 
 th{
-border-bottom: 2px solid #fff;
-border-right: 2px solid;
+border-bottom: 2px solid #ff802a;
 }
-td{
+/*td{
 border-bottom: 1px solid #666;
 border-right: 2px solid;
-}
+}*/
 
 </style>
 </head>
@@ -61,14 +60,14 @@ border-right: 2px solid;
                            <h2 class="text-center text-white" id="content">ADMIN RECORD</h2>    
                     </div>
                   </div>
-  
+    <div class="container">
   <?php
   $connect=mysqli_connect('localhost', 'root','','menu') or die('error connecting');
   $query= "select * from users";
   $result= mysqli_query($connect,$query) or die('error executing query');
-  echo "<table>";
-  echo"<tr><th>Order_id</th><th>Firstname</th><th>Lastname</th><th>Food Option</th><th>Order Status</th></tr>";
-$index = 0;
+  echo "<table class='table table-striped'>";
+  echo"<tr><th>#</th><th>Firstname</th><th>Lastname</th><th>Food Option</th><th>Order Status</th></tr>";
+$index = 1;
 while($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 $order_id = $row['order_id'];
 $firstname =$row['firstname'];
@@ -76,31 +75,31 @@ $lastname =$row['lastname'];
 $foodoption =$row['foodoption'];
 $order_status =$row['order_status'];
 
-
 echo "<tr>";
-echo"<td> $order_id </td>";
+echo"<td> $index </td>";
 echo"<td> $firstname </td>";
 echo"<td>$lastname</td>";
 echo"<td>$foodoption</td>";
-echo"<td>$order_status</td>";
+?>
+<td>
+ <form method="post" action="process_delivery.php">
+ <input type="hidden" name="ords" value="<?php echo $order_id;?>">
+  <?php
+    if($order_status==0)
+      echo "<button type='submit' class='btn btn-danger'>Undelivered</button>";
+    else 
+      echo "<button type='button' class='btn btn-success' disabled>Delivered</button>";
+  ?>
+  </form>
+</td>
+<?php
 echo "</tr>";
+$index++;
 }
 echo "</table>";
 
 
- /* echo"<table>";
-echo"<tr><th>order_id</th><th>firstname</th><th>lastname</th></tr>";
-while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)){
-echo "<tr>";
-echo"<td>";
-echo $row ['order_id'];
-echo"</td><td>";
-echo $row ['firstname'];
-echo"</td><td>";
-echo $row ['lastname'];
-echo"</td></tr>";
-echo"</table>";
-}*/
-  ?>  
+  ?> 
+  </div> 
 </body>
 </html>

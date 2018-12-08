@@ -128,6 +128,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <!-- Description of ow the system works-->
     <div class="container-fluid">
       <h2 class="text-center" id="how">How it Works</h2>
       <div class="row" id="direction">
@@ -154,8 +155,9 @@
         </div>
       </div>
     </div>
+    <!--A section Displaying the Food Menu-->
     <div class="container-fluid" id="menu">
-      <h2 class="text-center">Menu</h2>
+      <h2 class="text-center">Food Menu</h2>
       <div class="row">
         <div class="col-md-4 col-lg-4 col-sm-6">
           <div class="card">
@@ -285,6 +287,7 @@
         </div>
       </div>
     </div>
+  <!-- A section that speaks briefly about the system-->
     <div class="container-fluid" id="promote">
       <div class="row">
         <div class="col-sm">
@@ -305,19 +308,20 @@
         </div>
       </div>
     </div>
+  <!--A section that dislays newsletter that allows users subscribe-->
     <div class="container-fluid" id="newsletter">
       <div class="row">
-        <div class="col-md-12 col-sm-6 d-flex">
-          <div class="mr-auto p-2">
+        <div class="col-md-12 col-sm-6">
+          <div class="float-sm-left">
             <p class="text-center">
               Kindly subscribe to get updates from our Newsletter:
             </p>
           </div>
-          <div class="p-2">
+          <div class="float-sm-right">
             <form method="post" action="subscribe.php">
             <div class="input-group ">
             <input type="email" class="form-control" name="email" id="email" placeholder="Email"  aria-label="User's Email"
-                aria-describedby="basic-addon2">
+                aria-describedby="basic-addon2" required>
               <div class="input-group-append">
                 <input class="btn" name="submit" value="Subscribe" type="submit"></button>
               </div>
@@ -327,6 +331,7 @@
         </div>
       </div>
     </div>
+  <!--Footer-->
     <footer class="mainfooter" role="contentinfo">
       <div class="footer-middle">
         <div class="container-fluid">
@@ -392,7 +397,7 @@
         </div>
       </div>
     </footer>
-
+<!--Javascript section for passing food option data--> 
     <script>
       $('a.btn').click( function(evt){
         evt.preventDefault();

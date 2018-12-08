@@ -9,17 +9,93 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-   
+   <!-- <script type="text/javascript">
+	function validateForm() {
+    var firstname = document.regForm.fname;
+	if (firstname.value == "") {
+	alert("Please input your firstname");
+	name.focus();
+    return false;
+    }
+    if (!isNaN(firstname.value)) {
+	alert("Please input only alphabet");
+	name.focus();
+    return false;
+    }
+    var lastname = document.regForm.lname;
+	if (lastname.value == "") {
+	alert("Please input your lasttname");
+	name.focus();
+    return false;
+    }
+    if (!isNaN(lastname.value)) {
+	alert("Please input only text");
+	name.focus();
+    return false;
+    }
+	var email = document.regForm.email;
+	if (email.value == "") {
+	alert("Please input your email address");
+	email.focus();
+	return false;
+	}
+	if (email.value.indexOf("/") > -1)
+        {
+        alert("/ cannot be in field");
+        email.focus() ;          
+            return false;
+     } 
+     if (email.value.indexOf(".") < 0)
+        {
+           alert(". is missing in field");
+           email.focus();
+    return false;
+    }
+    if (email.value.indexOf("@") < 0)
+        {
+            alert("@ is missing in field");
+           email.focus();
+            return false;
+        }   
+	var phone = document.regForm.phone;
+	if (phone.value == "" || isNaN(phone.value)) {
+	alert("Phone number should be numeric.");
+	phone.focus();
+	return false;
+	}
+	if (phone.value.length != 11) {
+	alert( "Phone number should be exactly 11 digits.");
+	phone.focus();
+	return false;
+	}
+	var street = document.regForm.street;
+	if ( street.value == "") {
+	alert("Please select your gender");
+	return false;
+    }
+    var city = document.regForm.city;
+	if (city.value == "") {
+	alert("Please input your country");
+	city.focus();
+    return false;
+    }
+  var state = document.regForm.state;
+	if (state.value == "") {
+	alert("Please input your country");
+state.focus();
+    return false;
+    }
+	return true;
+	}
+	</script>-->
   </head>
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="index.php">
+        <a class="navbar-brand" href="index.php" >
             <img src="image/logoo.PNG"  alt="">
           </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
@@ -37,18 +113,18 @@
             
             <div class="col-md-6">
                     <h2>Billing Address</h2>
-                <form method="POST" action="users.php" role="form">
+                <form method="POST"  action="users.php">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Firstname">
+                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Firstname" required pattern="[a-z]+">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname">
+                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" required pattern="[a-z]+">
                     </div>
                     <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                      <div class="form-group">
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"required pattern="[0-9]+" minlength="11" maxlength="10"> 
                     </div>
                     <div class="form-group">
                       <input type="hidden" class="form-control" id="foodoption" name="foodoption" placeholder="Food option">
@@ -57,13 +133,13 @@
                       <input type="hidden" class="form-control" id="foodprice" name="foodprice" placeholder="Food Price">
               </div>
                           <div class="form-group">
-                                <input type="text" class="form-control" id="street" name="street" placeholder="Street Address">
+                                <input type="text" class="form-control" id="street" name="street" placeholder="Street Address" required  pattern="[a-z]+">
                          </div>
                          <div class="form-group">
-                                <input type="text" class="form-control" id="city" name="city" placeholder="City">
+                                <input type="text" class="form-control" id="city" name="city" placeholder="City" required pattern="[a-z]+">
                          </div>
                          <div class="form-group">
-                                <input type="text" class="form-control" id="state" name="state" placeholder="State">
+                                <input type="text" class="form-control" id="state" name="state" placeholder="State" required pattern="[a-z]+">
                          </div>
                          <input class="btn" type="submit"  name="submit" value="submit">
                   </form>
@@ -81,7 +157,9 @@
         $('#foodbasket').val(item);
 
         window.history.pushState('','','http://localhost/menu%20order%20system/checkout.php');
-        
-        </script>
+
+</script>
+ 
+
 </body>
 </html>
