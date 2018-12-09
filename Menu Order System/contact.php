@@ -15,70 +15,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="css/style.css" rel="stylesheet" type="text/css">
-  <!--<script type="text/javascript">
-	function validateForm() {
-    var fullname= document.conForm.fullname;
-	if (fullname.value == "") {
-	alert("Please input your firstname");
-	fullname.focus();
-    return false;
-    }
-    if (!isNaN(fullname.value)) {
-	alert("Please input only alphabet");
-	fullname.focus();
-    return false;
-    }
-	var email = document.conForm.email;
-	if (email.value == "") {
-	alert("Please input your email address");
-	email.focus();
-	return false;
-	}
-	if (email.value.indexOf("/") > -1)
-        {
-        alert("/ cannot be in field");
-        email.focus() ;          
-            return false;
-     } 
-     if (email.value.indexOf(".") < 0)
-        {
-           alert(". is missing in field");
-           email.focus();
-    return false;
-    }
-    if (email.value.indexOf("@") < 0)
-        {
-            alert("@ is missing in field");
-           email.focus();
-            return false;
-        }   
 
-	var phone = document.conForm.phone;
-	if (phone.value == "" || isNaN(phone.value)) {
-	alert("Phone number should be numeric.");
-	phone.focus();
-	return false;
-	}
-	if (phone.value.length != 11) {
-	alert( "Phone number should be exactly 11 digits.");
-	phone.focus();
-	return false;
-	}
-	var subject = document.conForm.subject;
-	if ( subject.value == "") {
-  alert("Please enter a subject");
-subject.focus();
-	return false;
-    }
-    var comment = document.conForm.comment;
-	if (comment.value == "") {
-	alert("Please enter a message");
-	comment.focus();
-    return false;
-    }
-	return true;
-	}
-	</script>-->
   </head>
   <body>
     
