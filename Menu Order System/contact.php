@@ -119,7 +119,7 @@ subject.focus();
                                 <form method="post" action="contacte.php" name="conForm" onsubmit="validateForm()">
                                         <div class="form-row">
                                           <div class="form-group col-md-6">
-                                            <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" required pattern="[a-z]+">
+                                            <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" required pattern="[a-z, A-Z]+">
                                           </div>
                                           <div class="form-group col-md-6">
                                             <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
@@ -130,11 +130,11 @@ subject.focus();
                                           <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone" required pattern="[0-9]+">
                                         </div>
                                         <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required pattern="[a-z]+">
+                                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required pattern="[a-z, A-Z]+">
                                         </div>
                                         </div>
                                         <div class="form-group">
-                                                <textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Enter your Message....." required pattern="[a-z]+"></textarea>
+                                                <textarea class="form-control" rows="5" name="comment" id="comment" placeholder="Enter your Message....." required pattern="[a-z, A-Z]+"></textarea>
                                               </div>
                                         <input type="submit" class="btn float-right" name="submit">
                                       </form>
@@ -193,7 +193,7 @@ subject.focus();
                     <div class="footer-bottom">
                       <div class="container">
                         <div class="row">
-                          <div class="col-xs-12">
+                          <div class="col-xs-12 col-md-12 col-lg-12">
                             <!--Footer Bottom-->
                             <a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
                             <a href="twitter.com"> <i class="fa fa-twitter"></i></a>

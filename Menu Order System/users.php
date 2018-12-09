@@ -15,6 +15,7 @@ $state = $_POST['state'];
 //create query*/
  $query="insert into users (firstname, lastname, email, phone, street, city, state, foodoption, foodprice) values ('$firstname','$lastname','$email','$phone','$street','$city','$state','$foodoption', '$foodprice')";
  //executing query
+ 
  mysqli_query($connect,$query) or die('error executing query');
 //close connection*/
  mysqli_close($connect) or die('closing connection');

@@ -204,7 +204,7 @@
                     <div class="footer-bottom">
                       <div class="container">
                         <div class="row">
-                          <div class="col-xs-12">
+                          <div class="col-xs-12 col-lg-12 col-md-12">
                             <!--Footer Bottom-->
 <a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
 <a href="twitter.com"> <i class="fa fa-twitter"></i></a>

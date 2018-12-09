@@ -211,7 +211,7 @@
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Pancakes with glazed syrup topping and strawberries.
+                Pancakes with glazed syrup and strawberries.
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$40</h5></div>
@@ -232,7 +232,7 @@
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Salmon with black sauce and spice with vegetables.
+                Salmon with black sauce and spice.
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$60</h5></div>
@@ -253,7 +253,7 @@
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Hamburger stuffed with beef, mayonaise and cheese.
+                Hamburger stuffed with beef and cheese.
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$60</h5></div>
@@ -382,12 +382,12 @@
       <div class="footer-bottom">
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-12 col-lg-12 col-md-12">
               <!-- Footer Bottom -->
-<a href="facebook.com"><i class="fa fa-facebook-f"></i></a>
-<a href="twitter.com"> <i class="fa fa-twitter"></i></a>
-<a href="linkedin.com"><i class="fa fa-linkedin"></i></a>
-<a href="google.com"><i class="fa fa-google"></i></a>
+<a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+<a href="https://twitter.com/"> <i class="fa fa-twitter"></i></a>
+<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+<a href="https://gmail.com/"><i class="fa fa-google"></i></a>
               <p>Connect with us on our various platforms</p>
               <p class="text-center">
                 &copy; Copyright 2016 - City of USA. All rights reserved.

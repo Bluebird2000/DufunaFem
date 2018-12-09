@@ -9,85 +9,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
-   <!-- <script type="text/javascript">
-	function validateForm() {
-    var firstname = document.regForm.fname;
-	if (firstname.value == "") {
-	alert("Please input your firstname");
-	name.focus();
-    return false;
-    }
-    if (!isNaN(firstname.value)) {
-	alert("Please input only alphabet");
-	name.focus();
-    return false;
-    }
-    var lastname = document.regForm.lname;
-	if (lastname.value == "") {
-	alert("Please input your lasttname");
-	name.focus();
-    return false;
-    }
-    if (!isNaN(lastname.value)) {
-	alert("Please input only text");
-	name.focus();
-    return false;
-    }
-	var email = document.regForm.email;
-	if (email.value == "") {
-	alert("Please input your email address");
-	email.focus();
-	return false;
-	}
-	if (email.value.indexOf("/") > -1)
-        {
-        alert("/ cannot be in field");
-        email.focus() ;          
-            return false;
-     } 
-     if (email.value.indexOf(".") < 0)
-        {
-           alert(". is missing in field");
-           email.focus();
-    return false;
-    }
-    if (email.value.indexOf("@") < 0)
-        {
-            alert("@ is missing in field");
-           email.focus();
-            return false;
-        }   
-	var phone = document.regForm.phone;
-	if (phone.value == "" || isNaN(phone.value)) {
-	alert("Phone number should be numeric.");
-	phone.focus();
-	return false;
-	}
-	if (phone.value.length != 11) {
-	alert( "Phone number should be exactly 11 digits.");
-	phone.focus();
-	return false;
-	}
-	var street = document.regForm.street;
-	if ( street.value == "") {
-	alert("Please select your gender");
-	return false;
-    }
-    var city = document.regForm.city;
-	if (city.value == "") {
-	alert("Please input your country");
-	city.focus();
-    return false;
-    }
-  var state = document.regForm.state;
-	if (state.value == "") {
-	alert("Please input your country");
-state.focus();
-    return false;
-    }
-	return true;
-	}
-	</script>-->
   </head>
   <body>
     
@@ -101,7 +22,7 @@ state.focus();
           <ul class="navbar-nav ml-auto">
             
             <li class="nav-item">
-              <a class="nav-link" id="checkout-link" href="index.html">Checkout</a>
+              <a class="nav-link" id="checkout-link" href="checkout.php">Checkout</a>
             </li>
            
           </ul>
@@ -115,16 +36,16 @@ state.focus();
                     <h2>Billing Address</h2>
                 <form method="POST"  action="users.php">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Firstname" required pattern="[a-z]+">
+                      <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Firstname" required pattern="[a-z, A-Z]+">
                     </div>
                     <div class="form-group">
-                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" required pattern="[a-z]+">
+                      <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname" required pattern="[a-z, A-Z]+">
                     </div>
                     <div class="form-group">
                             <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                     </div>
                      <div class="form-group">
-                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"required pattern="[0-9]+" minlength="11" maxlength="10"> 
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"required pattern="[0-9]+" minlength="11" maxlength="11"> 
                     </div>
                     <div class="form-group">
                       <input type="hidden" class="form-control" id="foodoption" name="foodoption" placeholder="Food option">
@@ -133,19 +54,21 @@ state.focus();
                       <input type="hidden" class="form-control" id="foodprice" name="foodprice" placeholder="Food Price">
               </div>
                           <div class="form-group">
-                                <input type="text" class="form-control" id="street" name="street" placeholder="Street Address" required  pattern="[a-z]+">
+                                <input type="text" class="form-control" id="street" name="street" placeholder="Street Address" required>
                          </div>
                          <div class="form-group">
-                                <input type="text" class="form-control" id="city" name="city" placeholder="City" required pattern="[a-z]+">
+                                <input type="text" class="form-control" id="city" name="city" placeholder="City" required pattern="[a-z, A-Z]+">
                          </div>
                          <div class="form-group">
-                                <input type="text" class="form-control" id="state" name="state" placeholder="State" required pattern="[a-z]+">
+                                <input type="text" class="form-control" id="state" name="state" placeholder="State" required pattern="[a-z, A-Z]+">
                          </div>
-                         <input class="btn" type="submit"  name="submit" value="submit">
+                         <input class="btn float-right" type="submit"  name="submit" value="Place Order">
                   </form>
             </div>
             <div class="col-md-6" id="foodbasket">
-<h4>Your Food Basket</h4>
+<h4 class="text-center">Your Food Basket</h4>
+<p > Below is the food you have selected and the price of the food:</p>
+<p >Kindly fill the form on the left to place order</p>
             </div>
           </div>
       </div>
@@ -154,7 +77,7 @@ state.focus();
 <script>
         $('#foodoption').val(item);
         $('#foodprice').val(price);
-        $('#foodbasket').val(item);
+        $('#foodbasket').append(`<p>	${$('#foodoption').val()} : ${$('#foodprice').val()}</p>`)
 
         window.history.pushState('','','http://localhost/menu%20order%20system/checkout.php');
 
