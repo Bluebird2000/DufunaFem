@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+     
+        <button id="myButton">Add to Wishlist</button>
+      
+<script src="jquery-3.3.1.js"></script>
+<script>
+	var i;
+	function hookupevents() {
+ for (var i = 0; i < 4; i++) {
+  document.getElementById("myButton" + i)
+   .addEventListener("click",
+        function(i) { alert(i); });
+ }
+}</script>
+
+</body>
+</html>

@@ -14,7 +14,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="index.php" >
-            <img src="image/logoo.PNG"  alt="">
+            <img src="images/aceart.PNG"  alt="">
           </a>
       
       
@@ -28,7 +28,7 @@
           </ul>
         </div>
       </nav>
-      <div class="container">
+      <div class="container-fluid">
             
         <div class="row">
             
@@ -48,10 +48,10 @@
                             <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"required pattern="[0-9]+" minlength="11" maxlength="11"> 
                     </div>
                     <div class="form-group">
-                      <input type="hidden" class="form-control" id="foodoption" name="foodoption" placeholder="Food option">
+                      <input type="hidden" class="form-control" id="artoption" name="artoption" placeholder="Art option">
               </div>
               <div class="form-group">
-                      <input type="hidden" class="form-control" id="foodprice" name="foodprice" placeholder="Food Price">
+                      <input type="hidden" class="form-control" id="artprice" name="artprice" placeholder="Art Price">
               </div>
                           <div class="form-group">
                                 <input type="text" class="form-control" id="street" name="street" placeholder="Street Address" required>
@@ -65,21 +65,21 @@
                          <input class="btn float-right" type="submit"  name="submit" value="Place Order">
                   </form>
             </div>
-            <div class="col-md-6" id="foodbasket">
-<h4 class="text-center">Your Food Basket</h4>
-<p > Below is the food you have selected and the price of the food:</p>
+            <div class="col-md-6" id="artbasket">
+<h4 class="text-center">Your Order</h4>
+<p > Below is the art piece you have selected and the price of the piece:</p>
 <p >Kindly fill the form on the left to place order</p>
             </div>
           </div>
       </div>
 <script src="jquery-3.3.1.js"></script>
-<script src="js/menu.js"></script>
+<script src="js/art.js"></script>
 <script>
-        $('#foodoption').val(item);
-        $('#foodprice').val(price);
-        $('#foodbasket').append(`<p>	${$('#foodoption').val()} : ${$('#foodprice').val()}</p>`)
+        $('#artoption').val(item);
+        $('#artprice').val(price);
+        $('#artbasket').append(`<p>	${$('#artoption').val()} : ${$('#artprice').val()}</p>`)
 
-        window.history.pushState('','','http://localhost/menu%20order%20system/checkout.php');//state object, title and URL
+        window.history.pushState('','','http://localhost/aceart/checkout.php');
 
 </script>
  

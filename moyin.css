@@ -1,0 +1,38 @@
+.jumbotron{
+    background-image: url(black_background_lines_scratches_69440_1920x1080.jpg);
+    margin-bottom: 0;
+    background-size: cover;
+height:600px;
+padding: 12%;
+text-align: center;
+}
+.myworkbtn{
+ padding-bottom: 5px;
+ padding-left: 12px;
+ padding-right: 12px;
+    text-decoration: none;
+    color:#ffffff;
+    border:2px solid #fff;
+    font-size: 22px;
+    
+    
+}
+.myworkbtn:hover{
+color:white;
+text-decoration: none;
+}
+hr{
+    width:6%;
+    border:2px solid black;
+}
+#about{
+text-align: center;
+}
+#about .fa{
+   font-size: 40px;
+   width: 100px;
+   height: 100px;
+   padding:10%;
+   background:#ffff00;
+   border-radius: 50%
+}

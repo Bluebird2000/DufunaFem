@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Chef Mo</title>
+    <title>Ace-Art</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -42,7 +42,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <a class="navbar-brand" href="index.php">
-        <img src="image/logoo.png" alt="" />
+        <img src="images/aceart.png" alt="" />
       </a>
       <button
         class="navbar-toggler"
@@ -60,13 +60,16 @@
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
           <li class="nav-item active">
             <a class="nav-link" href="index.php"
-              >Menu<span class="sr-only">(current)</span></a
+              >Home<span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
               <a class="nav-link" href="aboutus.php">About Us</a></li>
           <li class="nav-item">
             <a class="nav-link" href="contact.php">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.php">Event</a>
           </li>
           
         </ul>
@@ -90,21 +93,21 @@
         <div class="carousel-item active">
           <img
             class="w-100 img-fluid"
-            src="image/burger-3199088_1280.jpg"
+            src="images/beauty-1721060_1280.jpg"
             alt="First slide"
           />
         </div>
         <div class="carousel-item">
           <img
             class="w-100 img-fluid"
-            src="image/pizza-329523_1280.jpg"
+            src="images/portrait-3113651_1280.jpg."
             alt="Second slide"
           />
         </div>
         <div class="carousel-item">
           <img
             class="w-100 img-fluid"
-            src="image/abstract-1238657_1280.jpg"
+            src="images/composing-2391033_1280.jpg"
             alt="Third slide"
           />
         </div>
@@ -128,48 +131,21 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
-    <!-- Description of ow the system works-->
-    <div class="container-fluid">
-      <h2 class="text-center" id="how">How it Works</h2>
-      <div class="row" id="direction">
-        <div
-          class="col-sm-4"
-          style="display: inline-block; text-align: center;"
-        >
-          <i class="fa fa-search icon"></i>
-          <p class="text-center">Find your Favourite Meal</p>
-        </div>
-        <div
-          class="col-sm-4"
-          style="display: inline-block; text-align: center;"
-        >
-          <i class="fa fa-truck"></i>
-          <p class="text-center">We deliver your Meal</p>
-        </div>
-        <div
-          class="col-sm-4"
-          style="display: inline-block; text-align: center;"
-        >
-          <i class="fa fa-credit-card"></i>
-          <p class="text-center">Pay on Delivery</p>
-        </div>
-      </div>
-    </div>
     <!--A section Displaying the Food Menu-->
     <div class="container-fluid" id="menu">
-      <h2 class="text-center">Food Menu</h2>
+      <h2 class="text-center">Art Gallery</h2>
       <div class="row">
         <div class="col-md-4 col-lg-4 col-sm-6">
           <div class="card">
             <img
               class="card-img-top"
-              src="image/cake-1971552_640.jpg"
+              src="images/maxresdefault.jpg"
               style="height:260px;"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Lacampagne Cheese Cake with chocolate topping
+               Ace-Art
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$65</h5></div>
@@ -184,13 +160,13 @@
           <div class="card">
             <img
               class="card-img-top"
-              src="image/cupcakes-690040_640.jpg"
+              src="images/beaded-2137080_640.jpg"
               style="height:260px;"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Cupcakes with Butter Icing and chocolate toppings
+              Michael Mapes
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$50</h5></div>
@@ -205,13 +181,13 @@
           <div class="card">
             <img
               class="card-img-top"
-              src="image/pancakes-2291908_640.jpg"
+              src="images/art-backlit-dawn-595747.jpg"
               style="height:260px;"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Pancakes with glazed syrup and strawberries.
+                Ace-Art
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$40</h5></div>
@@ -226,13 +202,13 @@
           <div class="card">
             <img
               class="card-img-top"
-              src="image/food-712665_640.jpg"
+              src="images/pexels-photo-1119973 (1).jpeg"
               style="height:260px;"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Salmon with black sauce and spice.
+              Kerry Miller
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$60</h5></div>
@@ -247,13 +223,13 @@
           <div class="card">
             <img
               class="card-img-top"
-              src="image/hamburger-1238246_640.jpg"
+              src="images/pexels-photo-219552.jpeg"
               style="height:260px;"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Hamburger stuffed with beef and cheese.
+               Ace-Art
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$60</h5></div>
@@ -268,13 +244,13 @@
           <div class="card">
             <img
               class="card-img-top"
-              src="image/salmon-518032_640.jpg"
+              src="images/Pencil vs Camera Art by Ben Heine.jpg"
               height="260px;"
               alt="Card image cap"
             />
             <div class="card-body">
               <p class="card-text text-center">
-                Roasted salmon filled with sauce, with vegetables.
+              Theodore Earl Butler
               </p>
               <div class="d-flex">
                 <div class="mr-auto p-2"><h5>$55</h5></div>
@@ -283,50 +259,6 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- A section that speaks briefly about the system-->
-    <div class="container-fluid" id="promote">
-      <div class="row">
-        <div class="col-sm">
-          <img
-            class="img-responsive center-block"
-            src="image/imageedit_2_6334294028.png"
-            width="500px;"
-            height="300px;"
-          />
-        </div>
-        <div class="col-sm">
-          <h3 class="text-center text-white">Best Menu Order App</h3>
-          <p class="text-center text-white">
-            We have various meal options you can order from and you can be
-            certain you would get exactly what you order for. We also have a
-            swift delivery service and a good customer service.
-          </p>
-        </div>
-      </div>
-    </div>
-  <!--A section that dislays newsletter that allows users subscribe-->
-    <div class="container-fluid" id="newsletter">
-      <div class="row">
-        <div class="col-md-12 col-sm-6">
-          <div class="float-sm-left">
-            <p class="text-center">
-              Kindly subscribe to get updates from our Newsletter:
-            </p>
-          </div>
-          <div class="float-sm-right">
-            <form method="post" action="subscribe.php">
-            <div class="input-group ">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email"  aria-label="User's Email"
-                aria-describedby="basic-addon2" required>
-              <div class="input-group-append">
-                <input class="btn" name="submit" value="Subscribe" type="submit"></button>
-              </div>
-            </div>
-</form>
           </div>
         </div>
       </div>
@@ -398,17 +330,17 @@
       </div>
     </footer>
 <!--Javascript section for passing food option data--> 
-    <script>
+<script>
       $('a.btn').click( function(evt){
         evt.preventDefault();
         var target = $(this)
         var price = target.parent().prev().find('h5')[0].textContent;
         var item = target.parent().parent().prev()[0].textContent;
-        var foodItem = JSON.stringify({/*used o Convert a JavaScript object into a string*/
+        var artItem = JSON.stringify({/*used o Convert a JavaScript object into a string*/
           price : price,
           item : item.trim()
         })
-        var customUrl="/checkout.php?item=" + foodItem;
+        var customUrl="/checkout.php?item=" + artItem;
         var currentLocation = window.location.href.lastIndexOf('/');/*used o grab part of url*/
         var newUrl = window.location.href.slice(0,currentLocation)/*slice he remaining part from the url*/
         window.location.href = newUrl + customUrl;/*get current url*/
